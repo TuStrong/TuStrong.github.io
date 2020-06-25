@@ -480,26 +480,26 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Hexo是什么？"><a href="#Hexo是什么？" class="headerlink" title="Hexo是什么？"></a>Hexo是什么？</h1><p>&emsp;&emsp;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。在使用Hexo搭建博客之前，需要安装git以及node.js。</p>
-<h1 id="Hexo搭建博客步骤"><a href="#Hexo搭建博客步骤" class="headerlink" title="Hexo搭建博客步骤"></a>Hexo搭建博客步骤</h1><p>可以参考<a href="https://www.bilibili.com/video/BV1je41147Ma" target="_blank" rel="noopener">B站视频</a>来进行搭建。</p>
+                <h2 id="Hexo是什么？"><a href="#Hexo是什么？" class="headerlink" title="Hexo是什么？"></a>Hexo是什么？</h2><p>&emsp;&emsp;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。在使用Hexo搭建博客之前，需要安装git以及node.js。</p>
+<h2 id="Hexo搭建博客步骤"><a href="#Hexo搭建博客步骤" class="headerlink" title="Hexo搭建博客步骤"></a>Hexo搭建博客步骤</h2><p>可以参考<a href="https://www.bilibili.com/video/BV1je41147Ma" target="_blank" rel="noopener">B站视频</a>来进行搭建。</p>
 <ul>
 <li>安装git</li>
 <li>安装node.js</li>
 <li>安装Hexo</li>
 <li>将博客部署到GitHub上</li>
 </ul>
-<h1 id="1-下载并安装git。"><a href="#1-下载并安装git。" class="headerlink" title="1.下载并安装git。"></a>1.下载并安装git。</h1><ul>
+<h2 id="1-下载并安装git。"><a href="#1-下载并安装git。" class="headerlink" title="1.下载并安装git。"></a>1.下载并安装git。</h2><ul>
 <li><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git下载地址</a></li>
 <li><a href="https://blog.csdn.net/weixin_44950987/article/details/102619708" target="_blank" rel="noopener">git安装教程（参考别人）</a></li>
 </ul>
-<h1 id="2-下载并安装node-js，配置环境变量。"><a href="#2-下载并安装node-js，配置环境变量。" class="headerlink" title="2.下载并安装node.js，配置环境变量。"></a>2.下载并安装node.js，配置环境变量。</h1><ul>
+<h2 id="2-下载并安装node-js，配置环境变量。"><a href="#2-下载并安装node-js，配置环境变量。" class="headerlink" title="2.下载并安装node.js，配置环境变量。"></a>2.下载并安装node.js，配置环境变量。</h2><ul>
 <li><a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">node.js下载地址</a></li>
 <li><a href="https://www.cnblogs.com/aizai846/p/11441693.html" target="_blank" rel="noopener">node.js安装以及配置教程（参考别人）</a></li>
 </ul>
-<h1 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3.安装Hexo"></a>3.安装Hexo</h1><ul>
+<h2 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3.安装Hexo"></a>3.安装Hexo</h2><ul>
 <li>使用Hexo的自动安装脚本hexo-script来安装Hexo。创建一个文件夹，此文件夹为搭建博客文件的存放地址。下载<a href="https://hexoscript.github.io/" target="_blank" rel="noopener">hexo-script</a>脚本到当前文件夹。在当前文件夹中右键单击Git Bash Here，运行以下命名：<br><code>source install.sh hexo_win</code><br>此时博客已经在本地自动搭建好了，运行<code>hexo s</code>命令，即可通过访问<code>http://localhost:4000</code>访问到搭建好的博客。</li>
 </ul>
-<h1 id="4-将博客部署到GitHub上"><a href="#4-将博客部署到GitHub上" class="headerlink" title="4.将博客部署到GitHub上"></a>4.将博客部署到GitHub上</h1><ul>
+<h2 id="4-将博客部署到GitHub上"><a href="#4-将博客部署到GitHub上" class="headerlink" title="4.将博客部署到GitHub上"></a>4.将博客部署到GitHub上</h2><ul>
 <li>创建一个仓库，名称为<code>yourname.github.io</code>，其中<code>yourname</code>为你的github账户。打开配置文件_config.yml，修改以下配置：</li>
 </ul>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:TuStrong/TuStrong.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
