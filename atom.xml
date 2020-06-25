@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>A New Beginning</title>
+  
+  <subtitle>今天也要学习哦</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://tustrong.github.io/"/>
+  <updated>2020-06-25T13:20:24.730Z</updated>
+  <id>https://tustrong.github.io/</id>
+  
+  <author>
+    <name>Tujiaxing</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Hexo搭建博客</title>
+    <link href="https://tustrong.github.io/2020/0625undefined.html"/>
+    <id>https://tustrong.github.io/2020/0625undefined.html</id>
+    <published>2020-06-25T01:28:57.000Z</published>
+    <updated>2020-06-25T13:20:24.730Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Hexo是什么？&quot;&gt;&lt;a href=&quot;#Hexo是什么？&quot; class=&quot;headerlink&quot; title=&quot;Hexo是什么？&quot;&gt;&lt;/a&gt;Hexo是什么？&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用
+        
+      
+    
+    </summary>
+    
+    
+      <category term="博客" scheme="https://tustrong.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="Hexo" scheme="https://tustrong.github.io/tags/Hexo/"/>
+    
+      <category term="博客搭建" scheme="https://tustrong.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
+  
+</feed>

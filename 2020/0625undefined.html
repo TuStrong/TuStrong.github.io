@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.1"></head>
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="A New Beginning" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -466,6 +467,11 @@
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    435
+                </div>
+                
 
                 
 
@@ -502,7 +508,10 @@
 <h2 id="4-将博客部署到GitHub上"><a href="#4-将博客部署到GitHub上" class="headerlink" title="4.将博客部署到GitHub上"></a>4.将博客部署到GitHub上</h2><ul>
 <li>创建一个仓库，名称为<code>yourname.github.io</code>，其中<code>yourname</code>为你的github账户。打开配置文件_config.yml，修改以下配置：</li>
 </ul>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:TuStrong/TuStrong.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<pre class=" language-yml"><code class="language-yml">deploy:
+  type: git
+  repo: git@github.com:TuStrong/TuStrong.github.io.git
+  branch: master</code></pre>
 <p>  其中<code>repo</code>的值为上面所建的仓库地址。</p>
 <ul>
 <li>在install.sh脚本的目录中右键单击Git Bash Here，运行以下命令：<br><code>source install.sh deploy</code><br>会下载一个up.sh文件，将up.sh复制到博客的根目录中，即/hexoblog/up.sh。然后右键单击Git Bash Here，运行以下命名：<br><code>source up.sh</code><br>即可自动将博客部署到你的github上。</li>
@@ -532,7 +541,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tustrong.github.io/2020/06/25/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">https://tustrong.github.io/2020/06/25/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</a>
+                    <a href="https://tustrong.github.io/2020/0625undefined.html">https://tustrong.github.io/2020/0625undefined.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -748,7 +757,7 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2020/06/25/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+                <a href="/2020/0625undefined.html">
                     <div class="card-image">
                         
                         
@@ -802,7 +811,7 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2020/06/25/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+                <a href="/2020/0625undefined.html">
                     <div class="card-image">
                         
                         
@@ -1047,6 +1056,9 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">435</span>&nbsp;字
             
             
             
