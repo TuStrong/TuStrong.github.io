@@ -469,7 +469,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.3k
+                    2.5k
                 </div>
                 
 
@@ -491,6 +491,18 @@
 <li>SpringMVC框架提供了一个DispatcherServlet作为前端控制器来分派请求，同时提供了灵活的配置处理程序映射、视图解析等。</li>
 <li>Mybatis框架是一个支持普通SQL查询、存储过程和高级映射的优秀持久层框架。<br><img src="//tustrong.github.io/2020/07/03/ssm-kuang-jia-zheng-he-liu-cheng/1.png" alt="SSM框架"></li>
 </ul>
+<p>各层之间的作用及关系：</p>
+<ul>
+<li><p>视图层：View层<br>&emsp;&emsp; 负责前台页面的展示，此层需要与Controller层结合起来开发。</p>
+</li>
+<li><p>表现层：Controller层<br>&emsp;&emsp; 负责具体的业务模块流程的控制。Controller层需要调用Service层的接口来控制业务流程。</p>
+</li>
+<li><p>业务层：Service层<br>&emsp;&emsp; 负责业务模块的逻辑应用设计，首先设计接口，然后实现具体的实现类。Service层需要调用Dao层定义的接口，来实现Service具体的实现类。</p>
+</li>
+<li><p>持久层：Dao层<br>&emsp;&emsp; 负责与数据库进行交互设计，用来处理数据的持久化工作。首先设计Dao的接口，然后在Spring的配置文件中定义此接口的实现类，然后就可以在其他模块中调用此接口来进行业务数据的处理，而不用关心此接口的具体实现类。</p>
+</li>
+</ul>
+<p>执行流程：<br><img src="//tustrong.github.io/2020/07/03/ssm-kuang-jia-zheng-he-liu-cheng/3.png" alt="SSM框架执行流程"></p>
 <h2 id="2-整合思路"><a href="#2-整合思路" class="headerlink" title="2.整合思路"></a>2.整合思路</h2><p>&emsp;&emsp; SSM框架整合就是指分别实现Spring与MyBatis、Spring与SpringMVC的整合。主要工作是将SpringMVC、MyBatis中的对象配置到Spring容器中，交给Spring来管理。</p>
 <ul>
 <li><p>Dao层：<br>&emsp;&emsp; 1.sqlMapConfig.xml &emsp; 空文件即可，但是需要文件头。<br>&emsp;&emsp; 2.applicationContext-dao.xml Spring整合MyBatis<br>&emsp;&emsp;&emsp;&emsp; a)创建数据库连接池。<br>&emsp;&emsp;&emsp;&emsp; b)管理sqlSessionFactory、mapper代理对象。<br>&emsp;&emsp;&emsp;&emsp; c)配置mapper文件扫描器。</p>
@@ -1320,7 +1332,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.7k</span>&nbsp;字
+                class="white-color">3k</span>&nbsp;字
             
             
             
