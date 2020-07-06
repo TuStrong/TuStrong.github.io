@@ -465,7 +465,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    2k
                 </div>
                 
 
@@ -515,7 +515,31 @@
 <p>(5)对象/关系映射集成模块<br>&emsp;&emsp; 对那些更喜欢使用对象/关系映射工具而不是直接使用JDBC的人，Spring提供了ORM模块。Spring并不试图实现它自己的ORM解决方案，而是为几种流行的ORM框架提供了集成方案，包括Hibernate、JDO和iBATIS SQL映射。Spring的事务管理支持这些ORM框架中的每一个也包括JDBC。</p>
 <p>(6)Spring的Web模块<br>&emsp;&emsp; Web上下文模块建立于应用上下文模块之上，提供了一个适合于Web应用的上下文。另外，这个模块还提供了一些面向服务支持。例如：实现文件上传的multipart请求，它也提供了Spring和其它Web框架的集成，比如Struts、WebWork。</p>
 <p>(7)Spring的MVC框架<br>&emsp;&emsp; Spring为构建Web应用提供了一个功能全面的MVC框架。虽然Spring可以很容易地与其它MVC框架集成，例如Struts，但Spring的MVC框架使用IoC对控制逻辑和业务对象提供了完全的分离。它也允许你声明性地将请求参数绑定到你的业务对象中，此外，Spring的MVC框架还可以利用Spring的任何其它服务，例如国际化信息与验证。</p>
-<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><p>1.<a href="https://www.jianshu.com/p/cd370ceaf3e8" target="_blank" rel="noopener">https://www.jianshu.com/p/cd370ceaf3e8</a></p>
+<h3 id="3-SpringMVC"><a href="#3-SpringMVC" class="headerlink" title="3.SpringMVC"></a>3.SpringMVC</h3><p>&emsp;&emsp; SpringMVC在项目中拦截用户请求，它的核心Servlet即DispatcherServlet承担中介的职责，将用户请求通过HandlerMapping去匹配Controller，Controller就是具体对应请求所执行的操作。</p>
+<p>核心组件：</p>
+<ul>
+<li>前端控制器（DispatcherServlet）</li>
+<li>处理器映射器（HandlerMapping）</li>
+<li>处理器适配器（HandlerAdapter）</li>
+<li>处理器或页面控制器（Controller）</li>
+<li>视图解析器（ViewResolver）</li>
+<li>验证器(Validator）</li>
+</ul>
+<p>SpringMVC执行流程：<br><img src="//tustrong.github.io/2020/07/05/ssm-kuang-jia-jie-shao/%5CSSM%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D%5C2.png" alt="SpringMVC执行流程"></p>
+<ul>
+<li>1.前端页面发送Request请求给前端控制器:DispatcherServlet。</li>
+<li>2.DispatcherServlet 请求查找Handler 到处理器映射器HandlerMapping。</li>
+<li>3.HandlerMapping 返回一个执行链：HandlerExecutionChain{ HandlerInterceptor1 HandlerInterceptor2 HandlerInterceptor3 …… Handler } 给前端控制器DispatcherServlet。</li>
+<li>4.前端控制器请求适配器HandlerAdapter执行.</li>
+<li>5.处理器Controller执行逻辑，调用业务层(Service层)，业务层调用持久层(DAO)层，然后逐层返回到Controller</li>
+<li>6.Controller 返回 ModelAndView 给适配器。</li>
+<li>7.适配器返回ModelAndView 给 DispatcherServlet。</li>
+<li>8.DispatcherServlet请求视图解析器(ViewResolver)进行视图解析。</li>
+<li>9.视图解析器返回View给DispatcherServlet。</li>
+<li>10.进行视图渲染，将模型数据填充到request域。</li>
+<li>11.DispatcherServlet给前台页面response响应。</li>
+</ul>
+<h3 id="4-MyBatis"><a href="#4-MyBatis" class="headerlink" title="4.MyBatis"></a>4.MyBatis</h3><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>1.<a href="https://www.jianshu.com/p/cd370ceaf3e8" target="_blank" rel="noopener">https://www.jianshu.com/p/cd370ceaf3e8</a><br>2.<a href="https://baike.baidu.com/item/spring%E6%A1%86%E6%9E%B6/2853288?fr=aladdin" target="_blank" rel="noopener">https://baike.baidu.com/item/spring%E6%A1%86%E6%9E%B6/2853288?fr=aladdin</a><br>3.<a href="https://zhuanlan.zhihu.com/p/30122606" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/30122606</a><br>4.<a href="https://blog.csdn.net/L531003231/article/details/84328510" target="_blank" rel="noopener">https://blog.csdn.net/L531003231/article/details/84328510</a></p>
 
             </div>
             <hr/>
@@ -1051,7 +1075,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">5.1k</span>&nbsp;字
+                class="white-color">5.4k</span>&nbsp;字
             
             
             
