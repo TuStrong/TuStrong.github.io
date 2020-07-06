@@ -507,7 +507,7 @@
 <li>AOP：可以通过预编译方式和运行期动态代理实现在不修改源代码的情况下给程序动态统一添加功能的一种技术。(面向切面编程能够将通用需求功能从不相关的类当中分离出来，使得很多类共享一个行为，一旦发生变化，不必修改很多类，而只需要修改这个行为即可。)</li>
 <li>容器：Spring包含并管理应用对象的配置和生命周期，在这个意义上它是一种容器。</li>
 </ul>
-<p><img src="//tustrong.github.io/2020/07/05/ssm-kuang-jia-jie-shao/%5CSSM%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D%5C1.png" alt="Spring框架组成"></p>
+<p><img src="//tustrong.github.io/2020/07/05/ssm-kuang-jia-jie-shao/1.png" alt="Spring框架组成"></p>
 <p>(1)核心容器(Spring Core)<br>&emsp;&emsp; 它是Spring框架最基础的部分，提供了依赖注入(Dependency Injection)特征来实现容器对Bean的管理。这里最基本的概念是BeanFactory，它是任何Spring应用的核心。BeanFactory是工厂模式的一个实现，它使用IoC将应用配置和依赖说明从实际的应用代码中分离出来。</p>
 <p>(2)应用上下文模块(Spring Context)<br>&emsp;&emsp; 核心模块的BeanFactory使Spring成为一个容器，而上下文模块使它成为一个框架。这个模块扩展了BeanFactory的概念，增加了对国际化（I18N）消息、事件传播以及验证的支持。另外，这个模块提供了许多企业服务，例如电子邮件、JNDI访问、EJB集成、远程以及时序调度（scheduling）服务。也包括了对模版框架例如Velocity和FreeMarker集成的支持。</p>
 <p>(3)Spring的AOP模块<br>&emsp;&emsp; Spring在它的AOP模块中提供了对面向切面编程的丰富支持。这个模块是在Spring应用中实现切面编程的基础。为了确保Spring与其它AOP框架的互用性，Spring的AOP支持基于AOP联盟定义的API。AOP联盟是一个开源项目，它的目标是通过定义一组共同的接口和组件来促进AOP的使用以及不同的AOP实现之间的互用性。Spring的AOP模块也将元数据编程引入了Spring。使用Spring的元数据支持，你可以为你的源代码增加注释，指示Spring在何处以及如何应用切面函数。</p>
@@ -521,7 +521,7 @@
 <li>(2)调用getBean方法，getBean是用来获取applicationContext.xml文件里bean的，参数是bean的id。一般情况都会强制转换成对应的业务层（接口）。</li>
 <li>(3)调用业务层（接口实现）的方法。</li>
 </ul>
-<p>&emsp;&emsp; bean中的内容是怎么注入进去的？简单来讲，就是在实例化一个bean时，实际上就实例化了类，它通过反射调用类中set方法将事先保存在HashMap中的类属性注入到类中。这样就回到了我们Java最原始的地方，对象.属性，对象.方法</p>
+<p>bean中的内容是怎么注入进去的？<br>&emsp;&emsp; 简单来讲，就是在实例化一个bean时，实际上就实例化了类，它通过反射调用类中set方法将事先保存在HashMap中的类属性注入到类中。这样就回到了我们Java最原始的地方，对象.属性，对象.方法</p>
 <h3 id="3-SpringMVC"><a href="#3-SpringMVC" class="headerlink" title="3.SpringMVC"></a>3.SpringMVC</h3><p>&emsp;&emsp; SpringMVC在项目中拦截用户请求，它的核心Servlet即DispatcherServlet承担中介的职责，将用户请求通过HandlerMapping去匹配Controller，Controller就是具体对应请求所执行的操作。</p>
 <p>核心组件：</p>
 <ul>
@@ -532,7 +532,7 @@
 <li>视图解析器（ViewResolver）</li>
 <li>验证器(Validator）</li>
 </ul>
-<p>SpringMVC执行流程：<br><img src="//tustrong.github.io/2020/07/05/ssm-kuang-jia-jie-shao/%5CSSM%E6%A1%86%E6%9E%B6%E4%BB%8B%E7%BB%8D%5C2.png" alt="SpringMVC执行流程"></p>
+<p>SpringMVC执行流程：<br><img src="//tustrong.github.io/2020/07/05/ssm-kuang-jia-jie-shao/2.png" alt="SpringMVC执行流程"></p>
 <ul>
 <li>1.前端页面发送Request请求给前端控制器:DispatcherServlet。</li>
 <li>2.DispatcherServlet 请求查找Handler 到处理器映射器HandlerMapping。</li>
