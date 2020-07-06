@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tustrong.github.io/"/>
-  <updated>2020-07-04T10:28:53.109Z</updated>
+  <updated>2020-07-06T02:21:37.683Z</updated>
   <id>https://tustrong.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>SSM框架介绍</title>
+    <link href="https://tustrong.github.io/2020/07/05/ssm-kuang-jia-jie-shao/"/>
+    <id>https://tustrong.github.io/2020/07/05/ssm-kuang-jia-jie-shao/</id>
+    <published>2020-07-05T06:15:24.000Z</published>
+    <updated>2020-07-06T02:21:37.683Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;SSM框架简介&quot;&gt;&lt;a href=&quot;#SSM框架简介&quot; class=&quot;headerlink&quot; title=&quot;SSM框架简介&quot;&gt;&lt;/a&gt;SSM框架简介&lt;/h2&gt;&lt;p&gt;&amp;emsp;&amp;emsp;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="https://tustrong.github.io/categories/Java/"/>
+    
+    
+      <category term="SSM" scheme="https://tustrong.github.io/tags/SSM/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SSM框架整合流程</title>
     <link href="https://tustrong.github.io/2020/07/03/ssm-kuang-jia-zheng-he-liu-cheng/"/>
     <id>https://tustrong.github.io/2020/07/03/ssm-kuang-jia-zheng-he-liu-cheng/</id>
     <published>2020-07-03T07:38:40.000Z</published>
-    <updated>2020-07-04T10:28:53.109Z</updated>
+    <updated>2020-07-06T01:31:56.282Z</updated>
     
     <summary type="html">
     
