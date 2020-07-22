@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tustrong.github.io/"/>
-  <updated>2020-07-06T07:52:34.386Z</updated>
+  <updated>2020-07-22T12:41:13.368Z</updated>
   <id>https://tustrong.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SpringMVC应用开发步骤</title>
+    <link href="https://tustrong.github.io/2020/07/22/springmvc-ying-yong-kai-fa-bu-zou/"/>
+    <id>https://tustrong.github.io/2020/07/22/springmvc-ying-yong-kai-fa-bu-zou/</id>
+    <published>2020-07-22T11:47:32.000Z</published>
+    <updated>2020-07-22T12:41:13.368Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1-SpringMVC应用开发步骤&quot;&gt;&lt;a href=&quot;#1-SpringMVC应用开发步骤&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="https://tustrong.github.io/categories/Java/"/>
+    
+      <category term="框架" scheme="https://tustrong.github.io/categories/Java/%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="SSM" scheme="https://tustrong.github.io/tags/SSM/"/>
+    
+      <category term="SpringMVC" scheme="https://tustrong.github.io/tags/SpringMVC/"/>
+    
+  </entry>
   
   <entry>
     <title>SSM框架介绍</title>

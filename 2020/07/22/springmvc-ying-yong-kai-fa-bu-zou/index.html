@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="使用Hexo搭建个人博客, A New Beginning">
+    <meta name="keywords" content="SpringMVC应用开发步骤, A New Beginning">
     <meta name="description" content="新的开始">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>使用Hexo搭建个人博客 | A New Beginning</title>
+    <title>SpringMVC应用开发步骤 | A New Beginning</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">使用Hexo搭建个人博客</h1>
+                    <h1 class="description center-align post-title">SpringMVC应用开发步骤</h1>
                 </div>
             </div>
         </div>
@@ -431,12 +431,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/tags/SSM/">
+                                <span class="chip bg-color">SSM</span>
                             </a>
                         
-                            <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                                <span class="chip bg-color">博客搭建</span>
+                            <a href="/tags/SpringMVC/">
+                                <span class="chip bg-color">SpringMVC</span>
                             </a>
                         
                     </div>
@@ -447,8 +447,12 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                博客
+                            <a href="/categories/Java/" class="post-category">
+                                Java
+                            </a>
+                        
+                            <a href="/categories/Java/%E6%A1%86%E6%9E%B6/" class="post-category">
+                                框架
                             </a>
                         
                     </div>
@@ -460,7 +464,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-25
+                    2020-07-22
                 </div>
                 
 
@@ -469,7 +473,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    468
+                    907
                 </div>
                 
 
@@ -486,37 +490,48 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Hexo是什么？"><a href="#Hexo是什么？" class="headerlink" title="Hexo是什么？"></a>Hexo是什么？</h2><p>&emsp;&emsp;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。在使用Hexo搭建博客之前，需要安装git以及node.js。</p>
-<h2 id="Hexo搭建博客步骤"><a href="#Hexo搭建博客步骤" class="headerlink" title="Hexo搭建博客步骤"></a>Hexo搭建博客步骤</h2><p>可以参考<a href="https://www.bilibili.com/video/BV1je41147Ma" target="_blank" rel="noopener">B站视频</a>来进行搭建。</p>
+                <h2 id="1-SpringMVC应用开发步骤"><a href="#1-SpringMVC应用开发步骤" class="headerlink" title="1.SpringMVC应用开发步骤"></a>1.SpringMVC应用开发步骤</h2><p>（1）在web.xml文件中定义前端控制器DispatcherServlet来拦截用户请求。<br>&emsp;&emsp; 由于Web应用是基于请求/响应架构的应用，所以不管哪个MVC Web框架，都需要在web.xml中配置该架构的核心Servlet或Filter，这样才可以让该框架介入Web应用中。</p>
+<pre class=" language-xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="UTF-8"?></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>web-app</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>xsi</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://www.w3.org/2001/XMLSchema-instance<span class="token punctuation">"</span></span> 
+         <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://java.sun.com/xml/ns/javaee<span class="token punctuation">"</span></span> 
+         <span class="token attr-name"><span class="token namespace">xsi:</span>schemaLocation</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd<span class="token punctuation">"</span></span> <span class="token attr-name">version</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>2.5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>display-name</span><span class="token punctuation">></span></span>SpringMVC<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>display-name</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet-name</span><span class="token punctuation">></span></span>springmvc<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet-name</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet-class</span><span class="token punctuation">></span></span>org.springframework.web.servlet.DispatcherServlet<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet-class</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>init-param</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>param-name</span><span class="token punctuation">></span></span>contextConfigLocation<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>param-name</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>param-value</span><span class="token punctuation">></span></span>classpath:spring-configs.xml<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>param-value</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>init-param</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>load-on-startup</span><span class="token punctuation">></span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>load-on-startup</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet</span><span class="token punctuation">></span></span>
+  <span class="token comment" spellcheck="true">&lt;!-- 让SpringMVC的前端控制器拦截所有请求 --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet-mapping</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet-name</span><span class="token punctuation">></span></span>springmvc<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet-name</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>url-pattern</span><span class="token punctuation">></span></span>/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>url-pattern</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet-mapping</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>web-app</span><span class="token punctuation">></span></span></code></pre>
+<p>（2）如果以POST方式提交请求，则定义包含表单数据的JSP页面。如果仅仅只是以GET方式发生请求，则无须经过这一步。</p>
+<p>（3）定义处理用户请求的Handle类，可以实现Controller接口或者使用@Controller注解。<br>&emsp;&emsp; 这一步是MVC框架必不可少的，因为这个DispatcherServlet就是MVC中的C，也就是前端控制器，该控制器负责接收请求，并将请求分发给对应的Handle，即实现Controller接口的Java类，而该Java类负责调用后台业务逻辑代码来处理请求。</p>
+<p>（4）配置Handle。<br>&emsp;&emsp; 使用xml文件或注解的方式来配置Handle。</p>
+<pre class=" language-xml"><code class="language-xml"><span class="token comment" spellcheck="true">&lt;!-- 配置Handle，映射"/hello"请求 --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bean</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/hello<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>org.fkit.controller.HelloController<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span></code></pre>
+<pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@Controller</span>
+<span class="token keyword">public</span> classw HelloController <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span>value<span class="token operator">=</span><span class="token string">"\hello"</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> ModelAndView <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>（5）编写视图资源<br>&emsp;&emsp; 当Handle处理用户请求结束后，通常会返回一个ModelAndView对象，该对象中应该包含返回的视图名或视图名和模型，这个视图名就代表要显示的物理视图资源。</p>
+<h2 id="2-SpringMVC执行流程"><a href="#2-SpringMVC执行流程" class="headerlink" title="2.SpringMVC执行流程"></a>2.SpringMVC执行流程</h2><p>（1）用户向服务器发生请求，请求被Spring的前端控制器DispatcherServlet截获。<br>（2）DispatcherServlet对请求URL(统一资源定位符)进行解析，得到URI(请求资源标识符)。然后根据该URI，调用HandleMapping获得该Handler配置的所有相关的对象，包括Handler对象以及Handler对象对应的拦截器，这些对象会被封装到一个HandlerExecutionChain对象当中返回。<br>（3）DispatcherServlet根据获得的Handler，选择一个合适的HandlerAdapter。HandlerAdapter会被用于处理多种Handler，调用Handler实际处理请求的方法，例如hello方法。<br>（4）提取请求中的模型数据，开始执行Handler(Controller)。在填充Handler的入参过程中，根据配置，Spring将帮我们做一些额外的工作。</p>
 <ul>
-<li>安装git</li>
-<li>安装node.js</li>
-<li>安装Hexo</li>
-<li>将博客部署到GitHub上</li>
+<li>消息转换。将请求想消息(如Json、xml等数据)转换成一个对象，将对象转换为指定的响应消息。</li>
+<li>数据转换。对请求消息进行数据转换，如String转换为Integer、Double等。</li>
+<li>数据格式化。对请求消息进行数据格式化，如将字符串转换成格式化数字或格式化日期等。</li>
+<li>数据验证。验证数据的有效性(长度、格式等)，验证结果存储到BindingResult或Error中。</li>
 </ul>
-<h2 id="1-下载并安装git。"><a href="#1-下载并安装git。" class="headerlink" title="1.下载并安装git。"></a>1.下载并安装git。</h2><ul>
-<li><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git下载地址</a></li>
-<li><a href="https://blog.csdn.net/weixin_44950987/article/details/102619708" target="_blank" rel="noopener">git安装教程（参考别人）</a></li>
-</ul>
-<h2 id="2-下载并安装node-js，配置环境变量。"><a href="#2-下载并安装node-js，配置环境变量。" class="headerlink" title="2.下载并安装node.js，配置环境变量。"></a>2.下载并安装node.js，配置环境变量。</h2><ul>
-<li><a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">node.js下载地址</a></li>
-<li><a href="https://www.cnblogs.com/aizai846/p/11441693.html" target="_blank" rel="noopener">node.js安装以及配置教程（参考别人）</a></li>
-</ul>
-<h2 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3.安装Hexo"></a>3.安装Hexo</h2><ul>
-<li>使用Hexo的自动安装脚本hexo-script来安装Hexo。创建一个文件夹，此文件夹为搭建博客文件的存放地址。下载<a href="https://hexoscript.github.io/" target="_blank" rel="noopener">hexo-script</a>脚本到当前文件夹。在当前文件夹中右键单击Git Bash Here，运行以下命名：<br><code>source install.sh hexo_win</code><br>此时博客已经在本地自动搭建好了，运行<code>hexo s</code>命令，即可通过访问<code>http://localhost:4000</code>访问到搭建好的博客。</li>
-</ul>
-<h2 id="4-将博客部署到GitHub上"><a href="#4-将博客部署到GitHub上" class="headerlink" title="4.将博客部署到GitHub上"></a>4.将博客部署到GitHub上</h2><ul>
-<li>创建一个仓库，名称为<code>yourname.github.io</code>，其中<code>yourname</code>为你的github账户。打开配置文件_config.yml，修改以下配置：</li>
-</ul>
-<pre class=" language-yml"><code class="language-yml">deploy:
-  type: git
-  repo: git@github.com:TuStrong/TuStrong.github.io.git
-  branch: master</code></pre>
-<p>  其中<code>repo</code>的值为上面所建的仓库地址。</p>
-<ul>
-<li>在install.sh脚本的目录中右键单击Git Bash Here，运行以下命令：<br><code>source install.sh deploy</code><br>会下载一个up.sh文件，将up.sh复制到博客的根目录中，即/hexoblog/up.sh。然后右键单击Git Bash Here，运行以下命名：<br><code>source up.sh</code><br>即可自动将博客部署到你的github上。</li>
-</ul>
-<h2 id="使用Hexo搭建博客时遇到的问题"><a href="#使用Hexo搭建博客时遇到的问题" class="headerlink" title="使用Hexo搭建博客时遇到的问题"></a>使用Hexo搭建博客时遇到的问题</h2><h3 id="1-Hexo插入本地图片无法显示的问题"><a href="#1-Hexo插入本地图片无法显示的问题" class="headerlink" title="1.Hexo插入本地图片无法显示的问题"></a>1.Hexo插入本地图片无法显示的问题</h3><p>&emsp;&emsp;<a href="http://etrd.org/2017/01/23/hexo%E4%B8%AD%E5%AE%8C%E7%BE%8E%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/" target="_blank" rel="noopener">解决办法</a></p>
+<p>（5）Handler执行完成后，向DispatcherServlet返回一个NodelAndView对象，ModelAndView对象中应该包含视图名或视图名和模型。<br>（6）根据返回的ModelAndView对象，选择一个合适的ViewResolver(视图解析器)返回给DispatcherServlet。<br>（7）ViewResolver结合Model和View来渲染视图。<br>（8）将视图渲染结果返回给客户端。</p>
 
             </div>
             <hr/>
@@ -542,7 +557,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://tustrong.github.io/2020/06/25/shi-yong-hexo-da-jian-ge-ren-bo-ke/">https://tustrong.github.io/2020/06/25/shi-yong-hexo-da-jian-ge-ren-bo-ke/</a>
+                    <a href="https://tustrong.github.io/2020/07/22/springmvc-ying-yong-kai-fa-bu-zou/">https://tustrong.github.io/2020/07/22/springmvc-ying-yong-kai-fa-bu-zou/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -580,12 +595,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/tags/SSM/">
+                                    <span class="chip bg-color">SSM</span>
                                 </a>
                             
-                                <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                                    <span class="chip bg-color">博客搭建</span>
+                                <a href="/tags/SpringMVC/">
+                                    <span class="chip bg-color">SpringMVC</span>
                                 </a>
                             
                         </div>
@@ -753,31 +768,88 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/03/ssm-kuang-jia-zheng-he-liu-cheng/">
+                <a href="/2020/07/22/springmvc-ying-yong-kai-fa-bu-zou/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="SSM框架整合流程">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="SpringMVC应用开发步骤">
                         
-                        <span class="card-title">SSM框架整合流程</span>
+                        <span class="card-title">SpringMVC应用开发步骤</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.Spring、SpringMVC、MyBatis简介
-Spring框架是一个轻量级的控制反转(IOC)和面向切面(AOP)的容器框架。
-SpringMVC框架提供了一个DispatcherServlet作为前端控制器来分派请求，同时提供
+                            1.SpringMVC应用开发步骤（1）在web.xml文件中定义前端控制器DispatcherServlet来拦截用户请求。&emsp;&emsp; 由于Web应用是基于请求/响应架构的应用，所以不管哪个MVC Web框架，都需要在web
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-03
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-22
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            <a href="/categories/Java/%E6%A1%86%E6%9E%B6/" class="post-category">
+                                    框架
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/SSM/">
+                        <span class="chip bg-color">SSM</span>
+                    </a>
+                    
+                    <a href="/tags/SpringMVC/">
+                        <span class="chip bg-color">SpringMVC</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/07/05/ssm-kuang-jia-jie-shao/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="SSM框架介绍">
+                        
+                        <span class="card-title">SSM框架介绍</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            SSM框架简介&emsp;&emsp; SSM框架是由Spring、SpringMVC(包含在Spring中)、MyBatis整合得到的，是标准的MVC模式。通常将一个系统分为表现层、Controller层、Service层、Dao层四层。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -799,64 +871,6 @@ SpringMVC框架提供了一个DispatcherServlet作为前端控制器来分派请
                     
                     <a href="/tags/SSM/">
                         <span class="chip bg-color">SSM</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/">
-                        <span class="chip bg-color">框架整合</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/06/25/shi-yong-hexo-da-jian-ge-ren-bo-ke/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="使用Hexo搭建个人博客">
-                        
-                        <span class="card-title">使用Hexo搭建个人博客</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Hexo是什么？&emsp;&emsp;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。在使用Hexo搭建博客之前，需要安装git以及node
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-25
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                    博客
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                        <span class="chip bg-color">博客搭建</span>
                     </a>
                     
                 </div>
